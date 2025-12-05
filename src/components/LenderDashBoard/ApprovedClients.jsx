@@ -4,7 +4,7 @@ import { IoEyeOutline } from 'react-icons/io5';
 
 const ApprovedClients = ({approvedClients}) => {
   const [actionId, setActionId] = useState(null);
-  // console.log(actionId);
+ 
     return (
         <div>
             <div className="overflow-x-auto">

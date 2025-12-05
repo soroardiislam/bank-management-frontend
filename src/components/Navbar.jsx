@@ -8,7 +8,7 @@ import { useAuthContext } from "../providers/AuthProviders";
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const {user} = useAuthContext();
-  // console.log(user.role);
+ 
   return (
     <div>
       <div className="flex justify-between items-center py-2 px-4 md:px-16 lg:px-20">
@@ -39,7 +39,7 @@ const Navbar = () => {
         }
         </div>
 
-        {/* responsive menu------------------------------------- */}
+       
         <button
           className="cursor-pointer md:hidden text-gray-900"
           onClick={() => setMenu(!menu)}

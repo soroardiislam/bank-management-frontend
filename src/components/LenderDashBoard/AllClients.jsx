@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const AllClients = ({allClients}) => {
     const [actionId, setActionId] = useState(null);
-    // console.log(actionId);
+  
     return (
         <div>
             <div className="overflow-x-auto">
