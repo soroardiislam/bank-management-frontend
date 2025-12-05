@@ -4,7 +4,7 @@ import reject from "../../assets/reject.png";
 
 const LoanStatus = () => {
     const {data} = useLoanStatus();
-    // console.log(data);
+    
     return (
         <div>
             {

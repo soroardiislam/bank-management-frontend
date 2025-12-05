@@ -7,7 +7,7 @@ import { PiSignOutFill } from "react-icons/pi";
 
 const LenderRoot = () => {
   const { pathname } = useLocation();
-  // console.log(pathname);
+  
   const navigate = useNavigate();
   const [isActive, setIsActive] = useState(pathname);
   const handleSignOut = () =>{

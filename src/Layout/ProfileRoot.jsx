@@ -13,14 +13,14 @@ const ProfileRoot = () => {
     const {pathname} = useLocation();
     const [isActive, setIsActive] = useState(pathname);
     const {profileInfo} = useProfileInfo();
-    // console.log(profileInfo?.data?.personalInfo?.firstName);
+    
     const handleSignOut = () =>{
         localStorage.removeItem("user");
         navigate('/');
         window.location.reload();
     }
     
-    // console.log(pathname);
+    
     return (
         <div className='bg-gray-100 pt-6 md:pt-8 lg:pt-10 px-3 md:px-16 lg:px-20 pb-8 md:pb-14 lg:pb-20'>
             <div className='mb-6 md:mb-8 lg:mb-10'>

@@ -10,7 +10,7 @@ const useProfileInfo = () => {
         queryKey:  [user?._id],
         queryFn: async() =>{
             const res = await axiosPublic.get(`/api/v1/profile/${user?._id}`);
-            // console.log(res.data);
+            
             return res.data;
         }
     })

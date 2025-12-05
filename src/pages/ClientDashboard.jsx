@@ -10,7 +10,7 @@ import { getScore } from '../utils/getScore';
 const ClientDashboard = () => {
     const {profileInfo} = useProfileInfo();
     const financialInfo = profileInfo?.data?.financialInfo;
-    // console.log(financialInfo);
+    
     let fafcBalance;
     if(financialInfo?.existingLoan === "yes"){
         let totalBalance = financialInfo?.valueOfLandOwnership + financialInfo?.mobileMoneyBalance + financialInfo?.existingLoanAmount + financialInfo?.electricityBill + financialInfo?.annualIncome;
@@ -23,7 +23,7 @@ const ClientDashboard = () => {
 
     
     const creditInfo = getCreditScore(fafcBalance);
-    // console.log(financialInfo, fafcBalance,creditInfo);
+
     
     const annualIncome = getScore(financialInfo?.annualIncome, 30);
     const electricityBill = getScore(financialInfo?.electricityBill, 30);
@@ -32,7 +32,7 @@ const ClientDashboard = () => {
         annualIncome, electricityBill, mobileMoneyBalance
     }
     const debitToIncomeRatio = getScore(fafcBalance, 17);
-    // console.log(factorsAffectingScore);
+    
     
     return (
         <div className='bg-gray-100 px-4 md:px-16 py-5 md:py-10 space-y-7'>
