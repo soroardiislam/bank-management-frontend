@@ -17,7 +17,7 @@ const ResetPassword = () => {
   const [otpNumber, setOtpNumber] = useState([]);
   const [showResetPasswordSection, setShowResetPasswordSection] = useState(false);
 
-// send otp number to email------------------
+// send otp number to email----------
   const handleSendOTP = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -32,7 +32,7 @@ const ResetPassword = () => {
       })
   };
 
-//   confirm otp number--------------------
+//   confirm otp number---------
 const handleConfirmOTP = (e) => {
     e.preventDefault();
     const otp = otpNumber.join("");
@@ -46,7 +46,7 @@ const handleConfirmOTP = (e) => {
       })
   }
 
-//   reset password----------------------
+//   reset password--------------
 const handleResetPassword = (e) => {
     e.preventDefault();
     const form = new FormData(e.target);
